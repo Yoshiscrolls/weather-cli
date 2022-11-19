@@ -1,29 +1,22 @@
-import {getArgs} from "./helpers/args.js";
-import {printSuccess, printError, printHelp} from "./services/log.service.js";
-import {saveKeyValue} from "./services/storage.service.js";
+import { getArgs } from "./helpers/args.js";
+import { printHelp } from "./services/log.service.js";
+import { saveToken, saveCity } from "./controllers/save.controller.js";
+import { getForecast } from "./controllers/weather.controller.js";
 
-
-const saveToken = async (token) => {
-    try {
-        await saveKeyValue('token', token)
-        printSuccess('Токен сохранён')
-    } catch (e) {
-        printError(e.message)
-    }
-};
 
 const initCLI = () => {
     const args = getArgs(process.argv);
 
     if (args.help) {
-        printHelp();
+        return printHelp();
     }
     if (args.save) {
-
+        return saveCity(args.save)
     }
     if (args.token) {
         return saveToken(args.token)
     }
+    return getForecast();
 };
 
 initCLI();
