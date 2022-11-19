@@ -1,5 +1,4 @@
 # weather-cli
-First statement of weather cli.
 
 Create with import/export es6 syntax
 
