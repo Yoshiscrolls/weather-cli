@@ -27,7 +27,7 @@ const printWeather = (res, icon) => {
             `${chalk.blue('Weather')}
             Weather in ${res.name}
             ${icon}  ${res.weather[0].description}
-            Temperature:${res.main.temp} (feels like: ${res.main.feels_like})
+            Temperature:${Math.floor(res.main.temp)} (feels like: ${Math.floor(res.main.feels_like)})
             Humidity:${res.main.humidity}%
             `
         )
