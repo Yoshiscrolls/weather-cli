@@ -1,11 +1,8 @@
 # weather-cli
 
-Create with import/export es6 syntax
+use command  node weather.js -help to see short manual
 
-Colorize text in console with Chalk 
-
-Use dedent to remove indents before lines
-
-Use axios for create get query
-
-Use MVC pattern
+No parameters - weather output
+              -save [city] - save the city
+              -help - output help menu
+              -token [API_KEY] - to save the token
