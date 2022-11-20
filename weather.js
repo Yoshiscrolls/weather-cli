@@ -1,7 +1,7 @@
-import { getArgs } from "./helpers/args.js";
-import { printHelp } from "./services/log.service.js";
-import { saveToken, saveCity } from "./controllers/save.controller.js";
-import { getForecast } from "./controllers/weather.controller.js";
+import { getArgs } from "./helpers/index.js";
+import { printHelp } from "./services/index.js";
+import { saveToken, saveCity, getForecast } from "./controllers/index.js";
+
 
 
 const initCLI = () => {

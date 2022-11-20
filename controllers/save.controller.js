@@ -1,5 +1,4 @@
-import {printError, printSuccess} from "../services/log.service.js";
-import {saveKeyValue, VARIABLE_DICTIONARY} from "../services/storage.service.js";
+import { saveKeyValue, VARIABLE_DICTIONARY, printError, printSuccess } from "../services/index.js";
 
 
 const saveToken = async (token) => {

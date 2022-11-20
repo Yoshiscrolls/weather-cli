@@ -1,5 +1,4 @@
-import { getKeyValue, VARIABLE_DICTIONARY } from "./storage.service.js";
-import { printError } from "./log.service.js";
+import { getKeyValue, VARIABLE_DICTIONARY, printError } from "./index.js";
 import axios from "axios";
 
 const getIcon = (icon) => {

@@ -1,6 +1,10 @@
-import {getKeyValue, VARIABLE_DICTIONARY} from "../services/storage.service.js";
-import {getWeather, getIcon} from "../services/api.service.js";
-import {printError, printWeather} from "../services/log.service.js";
+import {getKeyValue,
+    VARIABLE_DICTIONARY,
+    getWeather,
+    getIcon,
+    printError,
+    printWeather } from "../services/index.js";
+
 
 
 const getForecast = async () => {
